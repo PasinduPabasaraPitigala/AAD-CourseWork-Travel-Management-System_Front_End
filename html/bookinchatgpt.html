@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bookingchatgpt.css">
+    <title>Payment Form</title>
+</head>
+<body>
+<div class="container">
+    <form id="payment-form" class="payment-form">
+        <h2>Payment Details</h2>
+        <div class="input-container">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="Card Number" required>
+        </div>
+        <div class="input-container">
+            <label for="cardHolder">Card Holder</label>
+            <input type="text" id="cardHolder" placeholder="Card Holder" required>
+        </div>
+        <div class="input-container">
+            <label for="expirationMM">Expiration Month (MM)</label>
+            <input type="text" id="expirationMM" placeholder="MM" required>
+        </div>
+        <div class="input-container">
+            <label for="expirationYY">Expiration Year (YY)</label>
+            <input type="text" id="expirationYY" placeholder="YY" required>
+        </div>
+        <div class="input-container">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="CVV" required>
+        </div>
+        <div class="input-container">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+        </div>
+        <div class="input-container">
+            <label for="userId">User ID</label>
+            <input type="text" id="userId" placeholder="User ID" required>
+        </div>
+        <div class="input-container">
+            <label for="packageDetails">Package Details</label>
+            <textarea id="packageDetails" placeholder="Package Details" required></textarea>
+        </div>
+        <div class="input-container">
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" placeholder="Amount" required>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+<script src="../js/bookinchatgpt.js"></script>
+</body>
+</html>

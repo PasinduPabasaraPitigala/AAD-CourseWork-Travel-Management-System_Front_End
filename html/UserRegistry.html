@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Register</title>
+    <link rel="stylesheet" href="../css/user.css">
+    <link name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#">
+          <div class="user-details">
+              <div class="input-box">
+                  <span class="details">Full Name</span>
+                  <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" placeholder="Enter your Email" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">Password</span>
+                  <input type="text" placeholder="Enter password" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">NIC</span>
+                  <input type="text" placeholder="Enter your NIC" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">Address</span>
+                  <input type="text" placeholder="Enter your address" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">Date Of Birth</span>
+                  <input type="text" placeholder="Enter your DOB" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">Telephone Number</span>
+                  <input type="text" placeholder="Enter your PhoneNumber" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">Your Image</span>
+                  <input type="file" class="form-control" id="travelerProfilePicture" name="travelerProfilePicture" accept="image/*" required>
+              </div>
+          </div>
+
+            <div class="Gender-Details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="Gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="Gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="Gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

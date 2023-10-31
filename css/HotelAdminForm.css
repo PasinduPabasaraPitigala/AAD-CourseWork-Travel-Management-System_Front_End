@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, white, #73C6B6);
+}
+
+.form-container {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+    gap: 10px;
+
+}
+
+.form-group {
+    display: grid;
+    gap: 5px;
+
+}
+
+label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input[type="text"], input[type="checkbox"], select, textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    grid-column: span 2;
+}
+
+/*button {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
+
+
+#submit{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100px;
+    height: 40px;
+}
+
+#update{
+    background-color: #fd7e14;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100px;
+    position: relative;
+    left: 120px;
+    top:-40px ;
+    height: 40px;
+}
+
+#delete{
+    background-color: #b02a37;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100px;
+    position: relative;
+    left: 240px;
+    top:-80px ;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

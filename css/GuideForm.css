@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    background: #F49D1A;
+}
+
+#peacockImg{
+    position:  relative;
+    width: 100%;
+    height: 100%;
+}
+.header h5{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 22px;
+    color: #fff;
+}
+/*
+/upper button box/
+*/
+.upper-btn-box{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    padding: 30px;
+}
+
+.upper-btn-box .left-box{
+    width: 50%;
+    height: 100%;
+
+}
+
+.upper-btn-box .left-box button{
+    border: none;
+    outline: none;
+    background-color: #4286F5;
+    padding: 13px;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #fff;
+    margin:0px 10px  ;
+}
+.upper-btn-box .right-box{
+    width: 50%;
+    height: 100%;
+
+
+}
+#searchIcon{
+    font-size: 12px;
+    color: #4286F5;
+    padding: 10px;
+}
+#guideId{
+    width: 70%;
+    padding: 13px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #4286F5;
+    font-size: 12px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+.searchBtn{
+    border: none;
+    outline: none;
+    background-color: orange;
+    padding: 10px;
+    font-size: 12px;
+    font-family: Verdana;
+    color: #fff;
+    margin:0px 10px;
+
+}
+
+/*/Start Table coding/*/
+.table-box{
+    width: 100%;
+    padding: 30px;
+    background-color:#ffffff;
+    /*color: #E5BA73;*/
+}
+.table-box table{
+    width: 100%;
+    color: #606C5D;
+    /*   border: 1px solid #ccc;*/
+    /*border-top: none;*/
+}
+
+.table-box table tr th{
+    border-right: 1px solid #ccc;
+    padding: 30px 0px 0px ;
+    font-family: Verdana;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-box table tr td{
+    border-right: 1px solid #ccc;
+    padding: 10px 0px 5px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 11px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-box table tr td button{
+    width: 40%;
+    border: none;
+    outline: none;
+    background-color: #4286F5;
+    font-size: 18px;
+    font-family: Verdana;
+    color: #fff;
+    padding: 5px 0px 5px;
+}
+
+/*/start model coding/*/
+.model{
+    width: 0%;
+    height: 500px;
+    background: linear-gradient(135deg, white, #73C6B6);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    display: flex;
+    border-top: 20px groove #117864;
+    opacity:0 ;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+.model.active{
+    opacity: 1;
+    z-index: 1;
+    width: 70%;
+}
+
+.model .left-model{
+    width: 30%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+
+.model .left-model .img-box{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+#img1{
+    border-radius: 10px;
+}
+#plusIcon{
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 90px;
+    color: #4286F5;
+}
+#inputFile{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    opacity: 0;
+
+}
+#guideImg{
+    position: relative;
+    top: 100px;
+    left: 10px;
+    color: #4286F5;
+    font-size: 12px;
+}
+
+
+#img2{
+    border-radius: 10px;
+}
+#plusIcon2{
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 90px;
+    color: #4286F5;
+}
+#inputFile2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    opacity: 0;
+}
+#guideIdImg{
+    position: relative;
+    top: 100px;
+    left: 10px;
+    color: #4286F5;
+    font-size: 12px;
+}
+
+
+#img3{
+    border-radius: 10px;
+}
+#plusIcon3{
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 90px;
+    color: #4286F5;
+}
+#inputFile3{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    opacity: 0;
+}
+#guideNICImg{
+    position: relative;
+    top: 100px;
+    left: 10px;
+    color: #4286F5;
+    font-size: 12px;
+}
+
+.model .right-model{
+    width: 70%;
+    height: 100%;
+    border-left: 5px groove #117864;
+    padding: 30px;
+}
+.model .right-box .input-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.model .right-model .input-box label{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 20px 0px;
+}
+
+.input{
+    width: 70%;
+    margin: 10px 0px;
+    border: none;
+    padding: 8px;
+    outline: none;
+    border-bottom: 3px solid #117864;
+    background-color: transparent;
+}
+
+.buttonRegister {
+    width: 40%;
+    border: none;
+    outline: none;
+    background-color: #33B5E6;
+    padding: 10px;
+    font-size: 12px;
+    font-family: Verdana;
+    color: #fff;
+    margin: 0px 5px;
+}
+
+.buttonUpdate{
+    width: 40%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 12px;
+    font-family: Verdana;
+    color: #fff;
+    margin: 0px 5px;
+}
+
+.model .right-box .input-box button:disabled{
+    background-color: coral;
+}
+
+.model .close-icon{
+    position: absolute;
+    right: -30px;
+    top: -40px;
+    font-size: 30px;
+    padding: 10px;
+    color: maroon;
+
+}

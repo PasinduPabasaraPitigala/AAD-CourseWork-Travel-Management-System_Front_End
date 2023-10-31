@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/HotelAdminForm.css ">
+
+    <title>Hotel Admin Form</title>
+</head>
+<body>
+<div class="form-container">
+    <h2>Hotel Admin Form</h2>
+    <form id="hotelForm">
+        <div class="form-group">
+            <label for="hotelId">Hotel ID:</label>
+            <input type="text" id="hotelId" name="hotelId" required>
+        </div>
+        <div class="form-group">
+            <label for="hotelName">Hotel Name:</label>
+            <input type="text" id="hotelName" name="hotelName" required>
+        </div>
+        <div class="form-group">
+            <label for="hotelCategory">Hotel Category:</label>
+            <input type="text" id="hotelCategory" name="hotelCategory" required>
+        </div>
+        <div class="form-group">
+            <label for="hotelLocation">Hotel Location:</label>
+            <input type="text" id="hotelLocation" name="hotelLocation" required>
+        </div>
+
+        <div class="form-group">
+            <label for="hotelContact">Hotel Contact:</label>
+            <input type="text" id="hotelContact" name="hotelContact" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fullBoardWithACLuxuryRoomDouble">Full Board Luxury Room Double:</label>
+            <input type="text" id="fullBoardWithACLuxuryRoomDouble" name="fullBoardWithACLuxuryRoomDouble" required>
+        </div>
+
+        <div class="form-group">
+            <label for="halfBoardWithACLuxuryRoomDouble">Half Board Luxury Room Double:</label>
+            <input type="text" id="halfBoardWithACLuxuryRoomDouble" name="halfBoardWithACLuxuryRoomDouble" required>
+        </div>
+        <div class="form-group">
+            <label for="fullBoardWithACLuxuryRoomTriple">Full Board Luxury Room Triple:</label>
+            <input type="text" id="fullBoardWithACLuxuryRoomTriple" name="fullBoardWithACLuxuryRoomTriple" required>
+        </div>
+
+        <div class="form-group">
+            <label for="halfBoardWithACLuxuryRoomTriple">Half Board Luxury Room Triple:</label>
+            <input type="text" id="halfBoardWithACLuxuryRoomTriple" name="halfBoardWithACLuxuryRoomTriple" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="hotelContactEmail">Hotel Email:</label>
+            <input type="text" id="hotelContactEmail" name="hotelContactEmail" required>
+        </div>
+
+
+
+        <!-- Add more input fields for other properties -->
+        <div class="form-group">
+            <label for="isPetsAllowed">Pets Allowed:</label>
+            <!--    <input type="checkbox" id="isPetsAllowed" name="isPetsAllowed">-->
+            <select id="isPetsAllowed" name="isPetsAllowed">
+                <option value="YES">YES</option>
+                <option value="No">NO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cancellationCriteria">Cancellation Criteria:</label>
+            <input type="text" id="cancellationCriteria" name="cancellationCriteria">
+        </div>
+        <div class="form-group">
+            <label for="packageId">Package ID:</label>
+            <select id="packageId" name="packageId">
+                <option value="package1">Package 1</option>
+                <option value="package2">Package 2</option>
+                <option value="package3">Package 3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+        <div class="form-group">
+            <button id="update" type="update">Update</button>
+        </div>
+        <div class="form-group">
+            <button type="delete" id="delete">Delete</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/Hotel.js"></script>
+</body>
+</html>
