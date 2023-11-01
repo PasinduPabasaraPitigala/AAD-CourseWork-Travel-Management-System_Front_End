@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Edu TAS Beginner', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
     margin: 0;
-    background: linear-gradient(135deg, white, #73C6B6);
+    background: linear-gradient(135deg, white, #d9ce3a);
 }
 
 .form-container {
@@ -26,7 +26,7 @@ body {
 
 label {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 input[type="text"], input[type="checkbox"], select, textarea {
@@ -49,18 +49,21 @@ input[type="text"], input[type="checkbox"], select, textarea {
 
 
 #submit{
-    background-color: #4CAF50;
-    color: white;
+    background-color: #27b700;
+    color: #f1eaac;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    position: relative;
     width:100px;
     height: 40px;
+    top:40px;
+    font-weight: bolder;
 }
 
 #update{
-    background-color: #fd7e14;
-    color: white;
+    background-color: #139d90;
+    color: #f1eaac;
 
     border: none;
     border-radius: 4px;
@@ -68,13 +71,14 @@ input[type="text"], input[type="checkbox"], select, textarea {
     width:100px;
     position: relative;
     left: 120px;
-    top:-40px ;
+    top:0px ;
     height: 40px;
+    font-weight: bolder;
 }
 
 #delete{
-    background-color: #b02a37;
-    color: white;
+    background-color: rgb(176, 5, 73);
+    color: #f1eaac;
 
     border: none;
     border-radius: 4px;
@@ -82,8 +86,9 @@ input[type="text"], input[type="checkbox"], select, textarea {
     width:100px;
     position: relative;
     left: 240px;
-    top:-80px ;
+    top:-40px ;
     height: 40px;
+    font-weight: bolder;
 }
 
 button:hover {
