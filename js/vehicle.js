@@ -58,10 +58,42 @@ function deleteVehicle(){
 
     $.ajax({
         method:"DELETE",
-        url:"http://localhost:8082/api/v1/vehicles/Vput",
+        url:"http://localhost:8082/api/v1/vehicles/V_delete?Vehicle_ID="+vehicleID,
         async:true,
         success:function(data){
-            alert("Updated")
+            alert("Deleted")
+
+
+        },
+        error:function (xhr,exeception){
+            alert("Error")
+        }
+    })
+}
+
+
+function getAllVehicles(){
+    $.ajax({
+        method:"GET",
+        url:"http://localhost:8082/api/v1/vehicles/getAllVehicles",
+        async:true,
+        success: function (data){
+            if (data.code==="302"){
+                $('#vehicleTable').empty();
+                for (let vehicle of data.content){
+                   let vehicleID=vehicle.vehicleID
+                   let vehicleBrand=vehicle.vehicleBrand
+                   let vehicleCategory=vehicle.vehicleCategory
+                   let vehicleName=vehicle.vehicleName
+                   let fuelType=vehicle.fuelType
+
+                    // var row='<tr><td>${vehiclID}</td> <td>${vehicleBrand}</td> <td>${vehicleCategory}</td> <td>${vehicleName}</td> <td>${fuelType}</td> </tr>'
+                    // $('#vehicleTable').append(row);
+
+                }
+
+            }
+            alert("deleted");
         },
         error:function (xhr,exeception){
             alert("Error")
