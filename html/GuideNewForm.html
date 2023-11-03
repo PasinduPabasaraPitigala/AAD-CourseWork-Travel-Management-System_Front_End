@@ -3,32 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/GuideNewForm.css">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/HotelAdminForm.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/GuideNewForm.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <title>Guide Admin Form</title>
 </head>
 <body>
-<div class="container">
-    <form id="contact-form" class="contact-form">
-        <h2>Contact Us</h2>
-        <div class="input-container">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Your Name" required>
+<div class="form-container">
+    <h2>Guide Form</h2>
+    <form id="Guide Form">
+        <div class="form-group">
+            <label for="guideID">Guide ID:</label>
+            <input type="text" disabled id="guideID" name="guideID" required>
         </div>
-        <div class="input-container">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="Your Email" required>
+        <div class="form-group">
+            <label for="guideName">Guide Name:</label>
+            <input type="text" id="guideName" name="guideName" required>
         </div>
-        <div class="input-container">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" placeholder="Subject" required>
+        <div class="form-group">
+            <label for="guideAddress">Guide Address:</label>
+            <input type="text" id="guideAddress" name="guideAddress" required>
         </div>
-        <div class="input-container">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Message" required></textarea>
+        <div class="form-group">
+            <label for="guideAge">Guide Age:</label>
+            <input type="text" id="guideAge" name="guideAge" required>
         </div>
-        <button type="submit" class="btn">Submit</button>
+
+        <div class="form-group">
+            <label for="guideGender">Guide Gender:</label>
+            <input type="text" id="guideGender" name="guideGender" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guidePICIMGLocation">Guide Picture Image Location:</label>
+            <input type="text" id="guidePICIMGLocation" name="guidePICIMGLocation" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guideNICIMGLocation">Guide NIC Image Location:</label>
+            <input type="text" id="guideNICIMGLocation" name="guideNICIMGLocation" required>
+        </div>
+        <div class="form-group">
+            <label for="guideIDIMGLocation">Guide ID Image Location:</label>
+            <input type="text" id="guideIDIMGLocation" name="guideIDIMGLocation" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guideExperience">Guide Experience:</label>
+            <input type="text" id="guideExperience" name="guideExperience" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="manDayValue">Guide Man Day Value:</label>
+            <input type="text" id="manDayValue" name="manDayValue" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="remark">Remark:</label>
+            <input type="text" id="remark" name="remark" required>
+        </div>
+
+
+        <div class="form-group">
+            <button id="submit" type="button" onclick="saveGuide()">Submit</button>
+        </div>
+        <div class="form-group">
+            <button id="update" type="button" onclick="updateGuide()">Update</button>
+        </div>
+        <div class="form-group">
+            <button type="button" id="delete" onclick="updateGuide()">Delete</button>
+        </div>
     </form>
 </div>
-<script src="../js/GuideNewForm.js"></script>
+
 </body>
 </html>

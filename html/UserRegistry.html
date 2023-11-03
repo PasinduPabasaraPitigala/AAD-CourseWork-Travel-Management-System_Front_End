@@ -2,75 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Register</title>
-    <link rel="stylesheet" href="../css/user.css">
-    <link name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/HotelAdminForm.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/UserRegistry.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <title>User Form</title>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Registration</div>
-        <form action="#">
-          <div class="user-details">
-              <div class="input-box">
-                  <span class="details">Full Name</span>
-                  <input type="text" placeholder="Enter your name" required>
-              </div>
-              <div class="input-box">
-                  <span class="details">Email</span>
-                  <input type="text" placeholder="Enter your Email" required>
-              </div>
-              <div class="input-box">
-                  <span class="details">Password</span>
-                  <input type="text" placeholder="Enter password" required>
-              </div>
-              <div class="input-box">
-                  <span class="details">NIC</span>
-                  <input type="text" placeholder="Enter your NIC" required>
-              </div>
-              <div class="input-box">
-                  <span class="details">Address</span>
-                  <input type="text" placeholder="Enter your address" required>
-              </div>
-              <div class="input-box">
-                  <span class="details">Date Of Birth</span>
-                  <input type="text" placeholder="Enter your DOB" required>
-              </div>
-              <div class="input-box">
-                  <span class="details">Telephone Number</span>
-                  <input type="text" placeholder="Enter your PhoneNumber" required>
-              </div>
-              <div class="input-box">
-                  <span class="details">Your Image</span>
-                  <input type="file" class="form-control" id="travelerProfilePicture" name="travelerProfilePicture" accept="image/*" required>
-              </div>
-          </div>
+<div class="form-container">
+    <h2>User Form</h2>
+    <form id="User Form">
+        <div class="form-group">
+            <label for="userId">User ID:</label>
+            <input type="text" disabled id="userId" name="userId" required>
+        </div>
+        <div class="form-group">
+            <label for="userRole">User Role:</label>
+            <input type="text" id="userRole" name="userRole" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" required>
+        </div>
 
-            <div class="Gender-Details">
-                <input type="radio" name="gender" id="dot-1">
-                <input type="radio" name="gender" id="dot-2">
-                <input type="radio" name="gender" id="dot-3">
-                <span class="gender-title">Gender</span>
-                <div class="category">
-                    <label for="dot-1">
-                        <span class="dot one"></span>
-                        <span class="Gender">Male</span>
-                    </label>
-                    <label for="dot-2">
-                        <span class="dot two"></span>
-                        <span class="Gender">Female</span>
-                    </label>
-                    <label for="dot-3">
-                        <span class="dot three"></span>
-                        <span class="Gender">Prefer not to say</span>
-                    </label>
-                </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="Register">
+        <div class="form-group">
+            <label for="guideGender">Guide Gender:</label>
+            <input type="text" id="guideGender" name="guideGender" required>
+        </div>
 
-            </div>
-        </form>
-    </div>
+        <div class="form-group">
+            <label for="userPassword">User Password:</label>
+            <input type="text" id="userPassword" name="userPassword" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userNIC">User NIC:</label>
+            <input type="text" id="userNIC" name="userNIC" required>
+        </div>
+        <div class="form-group">
+            <label for="userNICImageLocation">User Image Location:</label>
+            <input type="text" id="userNICImageLocation" name="userNICImageLocation" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userAge">User Age:</label>
+            <input type="text" id="userAge" name="userAge" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="gender">User Gender:</label>
+            <input type="text" id="gender" name="gender" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="userEmail">User Email:</label>
+            <input type="text" id="userEmail" name="userEmail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userPhone">User Phone Number:</label>
+            <input type="text" id="userPhone" name="userPhone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userAddress">User Address:</label>
+            <input type="text" id="userAddress" name="userAddress" required>
+        </div>
+
+        <div class="form-group">
+            <label for="remarks">Remarks:</label>
+            <input type="text" id="remarks" name="remarks" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userImageLocation">User Image:</label>
+            <input type="text" id="userImageLocation" name="userImageLocation" required>
+        </div>
+
+        <div class="form-group">
+            <label for="isAuthenticated">Is Authenticated:</label>
+            <input type="text" id="isAuthenticated" name="isAuthenticated" required>
+        </div>
+
+        <div class="form-group">
+            <button id="submit" type="button" onclick="saveUser()">Submit</button>
+        </div>
+        <div class="form-group">
+            <button id="update" type="button" onclick="updateUser()">Update</button>
+        </div>
+        <div class="form-group">
+            <button type="button" id="delete" onclick="updateUser()">Delete</button>
+        </div>
+    </form>
+</div>
 
 </body>
 </html>

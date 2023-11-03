@@ -1,29 +1,37 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const form = document.getElementById("contact-form");
-//     const name = document.getElementById("name");
-//     const email = document.getElementById("email");
-//     const subject = document.getElementById("subject");
-//     const message = document.getElementById("message");
-//
-//     form.addEventListener("submit", function (e) {
-//         e.preventDefault();
-//
-//         if (validateForm()) {
-//             // Form data is valid; you can submit it or perform other actions here
-//             alert("Your message has been submitted!");
-//         }
-//     });
-//
-//     function validateForm() {
-//         if (
-//             name.value.trim() === "" ||
-//             email.value.trim() === "" ||
-//             subject.value.trim() === "" ||
-//             message.value.trim() === ""
-//         ) {
-//             alert("Please fill in all required fields.");
-//             return false;
-//         }
-//         return true;
-//     }
-// });
+function saveGuide(){
+    let guideName=$('#guideName').val();
+    let guideAddress=$('#guideAddress').val();
+    let guideAge=$('#guideAge').val();
+    let guideGender=$('#guideGender').val();
+    let guidePICIMGLocation=$('#guidePICIMGLocation').val();
+    let guideNICIMGLocation=$('#guideNICIMGLocation').val();
+    let guideIDIMGLocation=$('#guideIDIMGLocation').val();
+    let guideExperience=$('#guideExperience').val();
+    let manDayValue=$('#manDayValue').val();
+    let remark=$('#remark').val();
+    $.ajax({
+        method:"POST",
+        contentType:"application/json",
+        url:"http://localhost:8085/api/v1/guide/Gsave",
+        async:true,
+        data:JSON.stringify({
+            "guideID": "",
+            "guideName":guideName,
+            "guideAddress":guideAddress,
+            "guideAge":guideAge,
+            "guideGender":guideGender,
+            "guidePICIMGLocation":guidePICIMGLocation,
+            "guideNICIMGLocation":guideNICIMGLocation,
+            "guideIDIMGLocation":guideIDIMGLocation,
+            "guideExperience":guideExperience,
+            "manDayValue":manDayValue,
+            "remark":remark
+        }),
+        success:function(data){
+            alert("saved")
+        },
+        error:function (xhr,exeception){
+            alert("Error")
+        }
+    })
+}

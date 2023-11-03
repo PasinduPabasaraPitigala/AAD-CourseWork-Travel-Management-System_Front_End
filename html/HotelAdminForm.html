@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/Hotel.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
     <title>Hotel Admin Form</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <form id="hotelForm">
         <div class="form-group">
             <label for="hotelId">Hotel ID:</label>
-            <input type="text" id="hotelId" name="hotelId" required>
+            <input type="text" disabled id="hotelId" name="hotelId" required>
         </div>
         <div class="form-group">
             <label for="hotelName">Hotel Name:</label>
@@ -85,18 +87,16 @@
             </select>
         </div>
         <div class="form-group">
-            <button id="submit" type="button">Submit</button>
+            <button id="submit" type="button" onclick="saveHotel()">Submit</button>
         </div>
         <div class="form-group">
-            <button id="update" type="button">Update</button>
+            <button id="update" type="button" onclick="updateHotel()">Update</button>
         </div>
         <div class="form-group">
-            <button type="button" id="delete">Delete</button>
+            <button type="button" id="delete" onclick="updateHotel()">Delete</button>
         </div>
     </form>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="../js/Hotel.js"></script>
 </body>
 </html>
