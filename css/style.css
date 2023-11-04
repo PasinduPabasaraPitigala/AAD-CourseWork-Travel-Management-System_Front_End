@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&display=swap');
 
 :root{
-    --cyan:#73C6B6 ;
+    --cyan:#F7D060
+;
 }
 
 *{
@@ -43,7 +44,7 @@ header{
     top:0;
     left:0;
     right: 0;
-    background:  #0B5345 ;
+    background:  #D36B00     ;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -89,7 +90,7 @@ header .search-bar-container{
     left: 0;
     right: 0;
     padding: 1.5rem 2rem;
-    background: #117864;
+    background: #D36B00;
     border-top: .1rem solid rgba(255,255,255,.2);
     display: flex;
     align-items: center;
@@ -105,7 +106,7 @@ header .search-bar-container #search-bar{
     width: 100%;
     padding: 1rem;
     text-transform: none;
-    color: #117864;
+    color: #D36B00;
     font-size: 1.7rem;
     border-radius: .5rem;
 }
@@ -179,17 +180,17 @@ header .search-bar-container label:hover{
 .btn{
     display: inline-block;
     margin-top: 1rem;
-    background:  #0E6655;
+    background:  #D36B00;
     color: #fff;
     padding: .8rem 3rem;
-    border: .2rem solid #0E6655;
+    border: .2rem solid #D36B00;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
 .btn:hover{
     background: var(--cyan);
-    color:  #0E6655;
+    color:  #D36B00;
 }
 
 .login-form-container form .btn{
@@ -206,7 +207,7 @@ header .search-bar-container label:hover{
     color: var(--cyan);
 }
 .login-form-container form p a:hover{
-    color: #0B5345;
+    color: #D36B00;
     text-decoration: underline;
 }
 
@@ -295,7 +296,7 @@ section{
 .heading span{
     font-size: 3.5rem;
     background: var(--cyan);
-    color:  #0B5345;
+    color:  #D36B00;
     border-radius: .5rem;
     padding: .2rem 1rem;
 }
@@ -332,7 +333,7 @@ section{
     color: #333;
 }
 .Packages /*.box-container .box .content*/ h3 i{
-    color: #0E6655;
+    color: #D36B00;
 }
 .Packages /*.box-container .box .content*/ p{
   font-size: 1.7rem;
@@ -342,7 +343,7 @@ section{
 
 .Packages /*.box-container .box .content*/ .starts i{
     font-size: 1.7rem;
-    color: #0B5345;
+    color: #D36B00;
 }
 
 .Packages /*.box-container .box .content*/ .price{
@@ -373,7 +374,7 @@ section{
 .services i{
     padding: 1rem;
     font-size: 5rem;
-    color: #117864;
+    color: #D36B00;
 }
 
 .services h3{
@@ -424,7 +425,7 @@ section{
 }
 .gallery h3{
     font-size: 2.5rem;
-    color: #117864;
+    color: #D36B00;
 }
 .gallery p{
     font-size: 1.5rem;
@@ -436,7 +437,99 @@ section{
     top: 0;
 }
 
+/*-------------------------------reviewS-------------------------------------*/
 
+.review .review-slider{
+    padding-bottom: 2rem;
+
+}
+
+.review .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow:0 1rem 2rem rgba(0,0,0,.1) ;
+    border-radius: .5rem;
+}
+
+.review .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius:50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+}
+
+.review .box h3{
+    color: #117864;
+    font-size: 2.5rem;
+}
+
+.review .box p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.review .box .starts i{
+    color: #0B5345;
+    font-size: 1.7rem;
+}
+
+/*------------------------------Contact---------------------------*/
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.image{
+    flex: 1 1 35rem;
+}
+
+#contactImg{
+    width: 100%;
+}
+
+.contact .row form{
+    flex:1 1 50rem ;
+    padding: 2rem;
+    box-shadow:0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .row form .inputBox input{
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+
+.textarea{
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+
+.textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
 
 /*//////////////media query////////////////////*/
 
@@ -468,7 +561,7 @@ section{
         top: 100%;
         right: 0;
         left: 0;
-        background: #117864;
+        background: #D36B00;
         border-top: .1rem solid rgba(255,255,255,.2) ;
         padding: 1rem 2rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -483,7 +576,7 @@ section{
         border-radius: .5rem;
         padding: 1.5rem;
         margin: 1.5rem 0;
-        background: #0B5345;
+        background: #D36B00;
     }
 }
 

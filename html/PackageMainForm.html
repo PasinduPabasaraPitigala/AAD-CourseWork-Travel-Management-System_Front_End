@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guide Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewPort" content="width=device=width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/GuideForm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+
+
+<div class="header">
+    <h5><i class="fas fa-guide"></i>Package Form...</h5>
+
+</div>
+<div class="upper-btn-box">
+    <div class=" left-box">
+        <a href="../html/PackageForm.html"><button id="addGuide"><i class="fas fa-plus"></i>&nbsp;Add package</button></a>
+        <button style="background-color: #33B5E6;"><i class="fas fa-eraser" ></i> &nbsp; Clear Filtering</button>
+
+    </div>
+    <div class="right-box"></div>
+    <i class="fas fa-search" id="searchIcon"></i>
+    <input type="text" id="guideId" placeholder="Search">
+    <button class="searchBtn">Search</button>
+</div>
+
+
+<div class="table-box" id="table-data">
+    <table>
+        <tr>
+            <th>Package Id</th>
+            <th>Package Name</th>
+            <th>Package Category</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Hello world</td>
+            <td>Hello world</td>
+            <td>Hello world</td>
+            <td>
+                <button><i class="fas fa-eye"></i></button>
+                <button style="background-color: red;"><i class="fas fa-trash"></i></button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="model" >
+    <i class="fa fa-times-circle close-icon" id="close-modal"></i>
+    <div class="left-model">
+        <div class="img-box">
+            <img src="../assets/images/Default avatar profile icon vector image on VectorStock.jpeg" width="150" height="150" alt="" id="img1">
+            <i class="fa fa-plus" id="plusIcon"></i>
+            <input type="file" id="inputFile">
+            <h4 id="guideImg">Guide Image</h4>
+        </div>
+
+        <div class="img-box">
+            <img src="../assets/images/Default avatar profile icon vector image on VectorStock.jpeg" width="150" height="150" alt="" id="img2">
+            <i class="fa fa-plus" id="plusIcon2"></i>
+            <input type="file" id="inputFile2">
+            <h4 id="guideIdImg">Guide Id Image</h4>
+        </div>
+
+        <div class="img-box">
+            <img src="../assets/images/Default avatar profile icon vector image on VectorStock.jpeg" width="150" height="150" alt="" id="img3">
+            <i class="fa fa-plus" id="plusIcon3"></i>
+            <input type="file" id="inputFile3">
+            <h4 id="guideNICImg">Guide NIC Image</h4>
+        </div>
+    </div>
+
+
+    <div class="right-model">
+        <form id="register-form">
+            <div class="input-box">
+                <label for="IdGuide">Guide Id</label>
+                <input class="input" type="text" id="IdGuide">
+            </div>
+            <div class="input-box">
+                <label for="name">Guide Name</label>
+                <input class="input" type="text" id="name">
+            </div>
+            <div class="input-box">
+                <label for="guideAge">Guide Age</label>
+                <input class="input" type="text" id="guideAge">
+            </div>
+            <div class="input-box">
+                <label for="guideAddress">Guide Address</label>
+                <input class="input" type="text" id="guideAddress">
+            </div>
+            <div class="input-box">
+                <label for="guideContact">Guide Contact</label>
+                <input class="input" type="text" id="guideContact">
+            </div>
+            <div class="input-box">
+                <label for="guideExperience">Experience</label>
+                <input  class="input" type="text" id="guideExperience">
+            </div>
+            <div class="input-box">
+                <label for="guideGender">Gender</label>
+                <input class="input" type="text" id="guideGender">
+            </div>
+
+            <div class="input-box">
+                <button id="registerBtn" class="buttonRegister">Register</button>
+                <button disabled="disabled" style="background-color: coral" class="buttonUpdate">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

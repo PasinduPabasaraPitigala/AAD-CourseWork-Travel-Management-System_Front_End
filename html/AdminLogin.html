@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/AdminLoginForm.css">
 </head>
-<body>
 
+<body>
+<!--<img src="../assets/images/Places%20to%20visit%20Sri%20Lanka_%20tourist%20maps%20and%20must-see%20attractions.jpeg" class="img">-->
+<!--<video src="../assets/videos/8ea54da9e5ff8d8c65c880463a2fb192.mp4" id="video-slider" loop autoplay muted class="img"></video>-->
+<div class="login-container">
+
+    <h2>Admin Login</h2>
+    <div id="error-message" class="error-message"></div>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="validateLogin()">Login</button>
+    </form>
+</div>
+
+<script src="../js/AdminLoginForm.js"></script>
 </body>
+
 </html>
